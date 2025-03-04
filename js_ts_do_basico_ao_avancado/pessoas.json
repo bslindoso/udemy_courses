@@ -1,0 +1,134 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "idade": 28,
+      "email": "joao.silva@example.com",
+      "telefone": "(11) 98765-4321",
+      "endereco": {
+        "rua": "Rua das Flores",
+        "numero": 123,
+        "cidade": "São Paulo",
+        "estado": "SP"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "idade": 34,
+      "email": "maria.oliveira@example.com",
+      "telefone": "(21) 99876-5432",
+      "endereco": {
+        "rua": "Avenida Brasil",
+        "numero": 456,
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Carlos Souza",
+      "idade": 22,
+      "email": "carlos.souza@example.com",
+      "telefone": "(31) 98765-1234",
+      "endereco": {
+        "rua": "Rua das Palmeiras",
+        "numero": 789,
+        "cidade": "Belo Horizonte",
+        "estado": "MG"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Ana Costa",
+      "idade": 29,
+      "email": "ana.costa@example.com",
+      "telefone": "(41) 99876-4321",
+      "endereco": {
+        "rua": "Rua das Acácias",
+        "numero": 101,
+        "cidade": "Curitiba",
+        "estado": "PR"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Pedro Alves",
+      "idade": 31,
+      "email": "pedro.alves@example.com",
+      "telefone": "(51) 98765-6789",
+      "endereco": {
+        "rua": "Avenida Central",
+        "numero": 202,
+        "cidade": "Porto Alegre",
+        "estado": "RS"
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Fernanda Lima",
+      "idade": 26,
+      "email": "fernanda.lima@example.com",
+      "telefone": "(61) 99876-5678",
+      "endereco": {
+        "rua": "Rua das Orquídeas",
+        "numero": 303,
+        "cidade": "Brasília",
+        "estado": "DF"
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Rafael Santos",
+      "idade": 35,
+      "email": "rafael.santos@example.com",
+      "telefone": "(71) 98765-9876",
+      "endereco": {
+        "rua": "Avenida das Mangueiras",
+        "numero": 404,
+        "cidade": "Salvador",
+        "estado": "BA"
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Juliana Pereira",
+      "idade": 27,
+      "email": "juliana.pereira@example.com",
+      "telefone": "(81) 99876-8765",
+      "endereco": {
+        "rua": "Rua dos Coqueiros",
+        "numero": 505,
+        "cidade": "Recife",
+        "estado": "PE"
+      }
+    },
+    {
+      "id": 9,
+      "nome": "Lucas Gomes",
+      "idade": 30,
+      "email": "lucas.gomes@example.com",
+      "telefone": "(85) 98765-3456",
+      "endereco": {
+        "rua": "Avenida das Flores",
+        "numero": 606,
+        "cidade": "Fortaleza",
+        "estado": "CE"
+      }
+    },
+    {
+      "id": 10,
+      "nome": "Patrícia Rocha",
+      "idade": 33,
+      "email": "patricia.rocha@example.com",
+      "telefone": "(91) 99876-2345",
+      "endereco": {
+        "rua": "Rua das Rosas",
+        "numero": 707,
+        "cidade": "Belém",
+        "estado": "PA"
+      }
+    }
+  ]
+}
