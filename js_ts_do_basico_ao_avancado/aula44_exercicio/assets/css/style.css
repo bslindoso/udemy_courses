@@ -3,6 +3,8 @@
 :root {
   --primary-color: rgb(13, 106, 134);
   --primary-color-darker: rgb(19, 86, 104);
+  --color-error: #f27474;
+  --color-success: #4aefaa;
 }
 
 * {
@@ -79,4 +81,16 @@ form button:hover {
 .column>h2 {
   font-size: 25px;
   margin-top: 0;
+}
+
+.paragrafo-resultado {
+  padding: 8px;
+}
+
+.paragrafo-resultado.success {
+  background-color: var(--color-success);
+}
+
+.paragrafo-resultado.error {
+  background-color: var(--color-error);
 }

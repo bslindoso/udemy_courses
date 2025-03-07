@@ -24,7 +24,7 @@
         <p>Entre 35 e 39,9</p>
         <p>Mais do que 40</p>
       </div>
-      <div class="column">
+      <div class="column" id="resultados-imc">
         <h2>Resultado</h2>
         <p>Abaixo do peso</p>
         <p>Peso normal</p>
@@ -36,15 +36,17 @@
     </div>
 
     <h2>Calcule seu IMC</h2>
-    <form action="">
+    <form action="" method="POST" id="formulario">
       <label for="peso-input">Peso:</label>
-      <input type="text" id="peso-input" name="peso">
+      <input type="text" id="peso-input" name="peso" placeholder="91">
 
       <label for="altura-input">Altura:</label>
-      <input type="text" id="altura-input" name="altura">
+      <input type="text" id="altura-input" name="altura" placeholder="1.66">
 
-      <button>Enviar</button>
+      <button type="submit">Enviar</button>
     </form>
+
+    <div id="resultado"></div>
 
   </section>
   <script src="./assets/js/main.js"></script>
