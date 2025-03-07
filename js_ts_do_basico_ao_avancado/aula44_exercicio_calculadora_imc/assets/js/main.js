@@ -18,24 +18,28 @@
     const altura = Number(inputAltura.value);
 
     if (!peso) {
-      setResultado('Peso inválido', false);
+      setResultado('Peso inválido', true);
       return;
     }
 
     if (!altura) {
-      setResultado('Altura inválida', false);
+      setResultado('Altura inválida', true);
       return;
     }
 
     const imc = getImc(peso, altura);
     const nivelImc = getNivelImc(imc);
-    setResultado(`Seu IMC é ${imc} (${nivelImc}).`, true);
+    setResultado(`Seu IMC é ${imc} (${nivelImc}).`);
   });
 
-  function setResultado(msg, isSuccess) {
+  function setResultado(msg, isError) {
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = '';
-    const p = (isSuccess) ? createParagraphTag(['paragrafo-resultado', 'success']) : createParagraphTag(['paragrafo-resultado', 'error']);
+
+    const classList = ['paragrafo-resultado'];
+    classList.push((isError) ? 'error' : 'success');
+    const p = createParagraphTag(classList);
+
     p.innerHTML = msg;
     resultado.appendChild(p);
   }
