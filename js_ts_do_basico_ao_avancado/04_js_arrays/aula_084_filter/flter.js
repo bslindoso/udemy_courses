@@ -1,5 +1,6 @@
 /**
- * Filter => Retorna uma array filtrada de acordo com o retorno da condição da função callback;
+ * Filter => Retorna uma array filtrada (menor ou mesmo tamanho que a array original) 
+ * de acordo com o retorno da condição da função callback;
  * se o etorno for true, adiciona o valor ao array;
  * se for false, não adiciona.
 */
