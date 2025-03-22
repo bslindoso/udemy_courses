@@ -9,9 +9,10 @@ const numerosDobrados = numeros.map(numero => numero * 2);
 console.log(numerosDobrados);
 
 /**
- * Retorne as pessoas que tem o nome com 5 letras ou mais;
- * Retorne as pessoas com mais de 50 anos;
- * Retorne as pessoas cujo o nome termina com "a";
+ * Para cada elemento:
+ * Retorne apenas uma string com o nome da pessoa;
+ * Remova apenas a chave "nome" do objeto;
+ * Adicione uma chave "id" em cada objeto.
  */
 const pessoas = [
   { nome: 'Luiz', idade: 62 },
@@ -22,11 +23,14 @@ const pessoas = [
   { nome: 'Wallace', idade: 47 },
 ];
 
-const pessoasCom5LetrasOuMais = pessoas.filter(pessoa => pessoa.nome.length >= 5);
-console.log(pessoasCom5LetrasOuMais);
+const nomes = pessoas.map(pessoa => pessoa.nome);
+console.log(nomes);
 
-const pessoasComMaisDe50Anos = pessoas.filter(pessoa => pessoa.idade > 50);
-console.log(pessoasComMaisDe50Anos)
+let chaves = pessoas.map(pessoa => ({ idade: pessoa.idade }));
+console.log(chaves);
+// OU
+chaves = pessoas.map(({ nome, ...idade }) => idade);
+console.log(chaves);
 
-const pessoasNomeTerminaComA = pessoas.filter(pessoa => pessoa.nome.charAt(pessoa.nome.length - 1) === 'a');
-console.log(pessoasNomeTerminaComA);
+const pessoasComIds = pessoas.map((pessoa, index) => ({ id: index + 1, ...pessoa }));
+console.log(pessoasComIds);
