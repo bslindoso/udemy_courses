@@ -17,3 +17,8 @@ console.log(pessoa1, pessoa1.nome, pessoa1.sobrenome, pessoa1["data de nasciment
 delete pessoa1["data de nascimento"];
 console.log(pessoa1, pessoa1.nome, pessoa1.sobrenome, pessoa1["data de nascimento"]);
 
+// criando métodos
+pessoa1.falarNome = function () {
+  console.log(`Meu nome é ${this.nome}`)
+};
+pessoa1.falarNome();

@@ -8,11 +8,13 @@ import os from 'os';
 const downloadsPath = path.join(os.homedir(), 'Downloads');
 
 // URL do vídeo do YouTube que você deseja baixar
-const SEU_VIDEO_ID = `bgLKB_vOFWg`;
-const videoUrl = `https://www.youtube.com/watch?v=${SEU_VIDEO_ID}`;
+const videoUrl = 'https://www.youtube.com/watch?v=AgE7W62IDVs&ab_channel=CastroBrothers';
+const videoId = videoUrl.split('v=')[1].split('&')[0]
 
 // Caminho onde o vídeo será salvo
-const outputFilePath = path.resolve(downloadsPath, 'video.mp4');
+const fileName = new Date().toLocaleDateString().split('/').reverse().join('-') + '-' + videoId;
+
+const outputFilePath = path.resolve(downloadsPath, `${fileName}.mp4`);
 
 // Verifica se a URL é válida
 ytdl.getInfo(videoUrl).then(info => {
@@ -32,4 +34,3 @@ ytdl.getInfo(videoUrl).then(info => {
 }).catch(error => {
   console.error('Erro ao obter informações do vídeo:', error);
 });
-
