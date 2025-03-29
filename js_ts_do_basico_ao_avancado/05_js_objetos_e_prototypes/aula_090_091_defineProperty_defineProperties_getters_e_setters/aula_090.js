@@ -66,3 +66,47 @@ console.log(produto3);
 /**
  * Getters e Setters
  */
+function Produto4(nome, preco, estoque) {
+  this.nome = nome;
+  this.preco = preco;
+
+  let estoquePrivado = estoque;
+
+  Object.defineProperty(this, 'estoque', {
+    enumerable: true,
+    configurable: true,
+    get: function () {
+      return estoquePrivado;
+    },
+    set: function (valor) {
+      if (typeof valor !== 'number') {
+        return;
+      }
+      estoquePrivado = valor;
+    }
+  });
+}
+
+const p4 = new Produto4('Mesa', 4500, 1);
+console.log(p4, p4.estoque);
+p4.estoque = 4;
+console.log('Novo estoque:', p4.estoque);
+
+/**
+ * Como seria getters e setters numa factory function
+ */
+function criaProduto(nome) {
+  return {
+    get nome() {
+      return nome;
+    },
+    set nome(valor) {
+      nome = valor;
+    }
+  }
+}
+
+const f1 = criaProduto('Manteiga');
+console.log(f1, f1.nome);
+f1.nome = 'Porta';
+console.log('Novo nome:', f1.nome);
