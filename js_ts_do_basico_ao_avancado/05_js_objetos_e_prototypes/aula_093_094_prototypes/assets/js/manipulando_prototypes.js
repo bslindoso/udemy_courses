@@ -56,4 +56,4 @@ Produto.prototype.aumento = function (percentual) {
 const coca = new Produto('Coca-Cola', 9.8);
 console.log(coca);
 coca.desconto(10);
-console.log(coca)
+console.log(coca);
